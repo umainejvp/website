@@ -2,16 +2,17 @@ import './Nav.css'
 import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import logo from '../assets/logo.jpg'
+import { Link } from 'react-router'
 
 function Nav() {
-    function scrollToSectionWithId(id: string) {
-        setExpanded(false)
-        const sectionTop = document.getElementById(id)?.getBoundingClientRect().top
-        if (!sectionTop) return
-        const navbarEl = document.getElementById('navbar')?.childNodes[0] as Element
-        const navbarOffset = navbarEl.getBoundingClientRect().height
-        window.scrollTo(0, window.scrollY + sectionTop - navbarOffset)
-    }
+    // function scrollToSectionWithId(id: string) {
+    //     setExpanded(false)
+    //     const sectionTop = document.getElementById(id)?.getBoundingClientRect().top
+    //     if (!sectionTop) return
+    //     const navbarEl = document.getElementById('navbar')?.childNodes[0] as Element
+    //     const navbarOffset = navbarEl.getBoundingClientRect().height
+    //     window.scrollTo(0, window.scrollY + sectionTop - navbarOffset)
+    // }
 
     function onIsTabletOrMobileChange(value: boolean) {
         setMobile(value)
@@ -37,20 +38,20 @@ function Nav() {
                     <img id='mobile-nav-logo' src={logo} alt='UMaine JVP Logo' />
                 </div>
             )}
-            <a className='nav-item' href='/#about'>
+            <Link className='nav-item' to='/#about'>
                 who we are
-            </a>
-            <a className='nav-item' href='/#get-involved'>
+            </Link>
+            <Link className='nav-item' to='/#get-involved'>
                 get involved
-            </a>
+            </Link>
             {!mobile && (
-                <a href='/' style={{ height: 'inherit' }}>
+                <Link to='/' style={{ height: 'inherit' }}>
                     <img id='jvp-logo' src={logo} alt='UMaine JVP Logo' />
-                </a>
+                </Link>
             )}
-            <a className='nav-item' href='/#contact'>
+            <Link className='nav-item' to='/#contact'>
                 contact
-            </a>
+            </Link>
             <a
                 id='register'
                 className='nav-item'

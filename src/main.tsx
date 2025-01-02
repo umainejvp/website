@@ -7,7 +7,7 @@ import Demands from './Demands.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename='/website'>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/demands' element={<Demands />} />
