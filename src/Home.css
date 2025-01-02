@@ -1,0 +1,158 @@
+#splash-image {
+    width: inherit;
+    aspect-ratio: 26/9;
+    background-image: url(/test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 100vh) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .main-nav-section {
+        padding-top: 2rem !important;
+
+        h1 {
+            font-size: 1.65rem !important;
+        }
+
+        h2 {
+            font-size: 1.3rem !important;
+        }
+
+        p, li {
+            font-size: 1.15rem !important;
+        }
+
+        #about-image-header {
+
+            img {
+                width: 6rem !important;
+            }
+
+            h2 {
+                font-size: 1rem !important;
+                line-height: 1.1rem !important;
+            }
+        }
+    }
+
+    #about {
+        >h2 {
+            margin-top: 1rem !important;
+        }
+    }
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.splash-square {
+    width: calc(100% - 8rem);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+.main-nav-section {
+    width: calc(100% - 2rem);
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+    p, li {
+        font-size: 1.25rem;
+        text-align: start;
+        max-width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-top: 0;
+    }
+
+    button, a.button {
+        color: #f9f9f9;
+        background-color: #6E55FF;
+    }
+}
+
+#about-image-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    img {
+        width: 10rem;
+    }
+
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        max-width: 35rem;
+        font-weight: normal;
+    }
+
+    #about-image-header-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
+
+#get-involved {
+    ul {
+        display: inline-block;
+        max-width: 60rem;
+        text-align: start;
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+#contact {
+    p {
+        text-align: center;
+    }
+}
