@@ -111,3 +111,49 @@ a.button:focus-visible {
 .title {
     color: #f9f9f9;
 }
+
+.main-nav-section {
+    scroll-margin-top: var(--nav-height);
+    width: calc(100% - 2rem);
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+    p, li {
+        font-size: 1.25rem;
+        text-align: start;
+        max-width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-top: 0;
+    }
+
+    button, a.button {
+        color: #f9f9f9;
+        background-color: #6E55FF;
+    }
+}
+
+.pdf-wrapper {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.pdf-page {
+    border-bottom: 1px solid darkgray;
+}
+
+.pdf-page:nth-child(1) {
+    border-top: 1px solid darkgray;
+}

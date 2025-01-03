@@ -1,6 +1,8 @@
 import './Home.css'
 import Nav from './components/Nav.tsx'
 import jvpLogoSrc from '/JVP-logo.svg'
+import instagramLogo from '/ig_icon.webp'
+import mailingListLogo from '/mailing_list_icon.png'
 
 function Home() {
     return (
@@ -58,17 +60,28 @@ function Home() {
                     <h2>JOIN US IN OUR WEEKLY MEETINGS!</h2>
                     <p>We meet every Tuesday from 5-6pm in the Memorial Union lobby!</p>
                     <div className='buttons-container'>
-                        <a
-                            className='button'
-                            href='https://docs.google.com/forms/d/e/1FAIpQLSftZI_yXCV5ZaaNDYtZNQSOpmtybHPDDMCWdK_9pi3zIJ7Ukg/viewform'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
-                            JOIN OUR MAILING LIST!
-                        </a>
-                        <a className='button' href='https://www.instagram.com/umainejvp/' target='_blank' rel='noreferrer'>
-                            FOLLOW US ON INSTAGRAM!
-                        </a>
+                        <div className='social-section'>
+                            <img className='social-logo' src={mailingListLogo} alt='Email Logo' />
+                            <a
+                                className='button'
+                                href='https://docs.google.com/forms/d/e/1FAIpQLSftZI_yXCV5ZaaNDYtZNQSOpmtybHPDDMCWdK_9pi3zIJ7Ukg/viewform'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                JOIN OUR MAILING LIST!
+                            </a>
+                        </div>
+                        <div className='social-section'>
+                            <img className='social-logo' src={instagramLogo} alt='Instagram Logo' />
+                            <a
+                                className='button'
+                                href='https://www.instagram.com/umainejvp/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                OR FOLLOW US ON INSTAGRAM!
+                            </a>
+                        </div>
                     </div>
                     <h2>WHY SHOULD YOU JOIN UMAINE JVP?</h2>
                     <ul>
@@ -91,8 +104,16 @@ function Home() {
                         <a href='mailto:umaine@jewishvoiceforpeace.org' target='_blank' rel='noreferrer'>
                             umaine@jewishvoiceforpeace.org
                         </a>
-                        .
                     </p>
+                    <p>
+                        <div className='social-section'>
+                            <img className='social-logo' src={instagramLogo} alt='Instagram Logo' />
+                            <a href='https://www.instagram.com/umainejvp/' target='_blank' rel='noreferrer'>
+                                or contact us on Instagram!
+                            </a>
+                        </div>
+                    </p>
+
                     <p>We hope to hear from you soon :)</p>
                 </section>
                 <footer></footer>

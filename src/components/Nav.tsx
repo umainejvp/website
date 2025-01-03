@@ -2,7 +2,7 @@ import './Nav.css'
 import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import logo from '../assets/logo.jpg'
-import { Link } from 'react-router'
+import { HashLink } from 'react-router-hash-link'
 
 function Nav() {
     // function scrollToSectionWithId(id: string) {
@@ -38,20 +38,26 @@ function Nav() {
                     <img id='mobile-nav-logo' src={logo} alt='UMaine JVP Logo' />
                 </div>
             )}
-            <Link className='nav-item' to='/#about'>
+            <HashLink className='nav-item' to='/#about' onClick={() => setExpanded(false)}>
                 who we are
-            </Link>
-            <Link className='nav-item' to='/#get-involved'>
+            </HashLink>
+            <HashLink className='nav-item' to='/#get-involved' onClick={() => setExpanded(false)}>
                 get involved
-            </Link>
-            {!mobile && (
-                <Link to='/' style={{ height: 'inherit' }}>
-                    <img id='jvp-logo' src={logo} alt='UMaine JVP Logo' />
-                </Link>
-            )}
-            <Link className='nav-item' to='/#contact'>
+            </HashLink>
+            <HashLink className='nav-item' to='/#contact' onClick={() => setExpanded(false)}>
                 contact
-            </Link>
+            </HashLink>
+            {!mobile && (
+                <HashLink to='/' style={{ height: 'inherit' }}>
+                    <img id='jvp-logo' src={logo} alt='UMaine JVP Logo' />
+                </HashLink>
+            )}
+            <HashLink className='nav-item' to='/demands' onClick={() => setExpanded(false)}>
+                demands
+            </HashLink>
+            <HashLink className='nav-item' to='/minutes-1982' onClick={() => setExpanded(false)}>
+                precedent
+            </HashLink>
             <a
                 id='register'
                 className='nav-item'
