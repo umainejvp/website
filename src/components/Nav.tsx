@@ -35,7 +35,9 @@ function Nav() {
                     <button id='menu' onClick={() => setExpanded(!expanded)}>
                         ≡
                     </button>
-                    <img id='mobile-nav-logo' src={logo} alt='UMaine JVP Logo' />
+                    <HashLink id='nav-img-link' to='/'>
+                        <img id='mobile-nav-logo' src={logo} alt='UMaine JVP Logo' />
+                    </HashLink>
                 </div>
             )}
             <HashLink className='nav-item' to='/#about' onClick={() => setExpanded(false)}>

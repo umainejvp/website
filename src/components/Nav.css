@@ -9,7 +9,7 @@
         transition: all 250ms;
     }
 
-    #navbar a,
+    #navbar a:not(#nav-img-link),
     #navbar button:not(#menu) {
         width: 100% !important;
         text-align: left !important;

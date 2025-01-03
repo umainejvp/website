@@ -105,13 +105,11 @@ function Home() {
                             umaine@jewishvoiceforpeace.org
                         </a>
                     </p>
-                    <p>
-                        <div className='social-section'>
-                            <img className='social-logo' src={instagramLogo} alt='Instagram Logo' />
-                            <a href='https://www.instagram.com/umainejvp/' target='_blank' rel='noreferrer'>
-                                or contact us on Instagram!
-                            </a>
-                        </div>
+                    <p className='social-section'>
+                        <img className='social-logo' src={instagramLogo} alt='Instagram Logo' />
+                        <a href='https://www.instagram.com/umainejvp/' target='_blank' rel='noreferrer'>
+                            or contact us on Instagram!
+                        </a>
                     </p>
 
                     <p>We hope to hear from you soon :)</p>

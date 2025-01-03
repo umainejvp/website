@@ -29,8 +29,8 @@ function Demands() {
             <Nav />
             <div className='page-content'>
                 <section className='main-nav-section' style={{ paddingTop: '2rem' }}>
-                    <h2>Our Demands to the University of Maine Board of Trustees</h2>
-                    <p>description here</p>
+                    <h2>Our Demands to the University of Maine System</h2>
+                    {/* <p>description here</p> */}
                 </section>
                 <div className='pdf-wrapper'>
                     <Document file={doc}>
