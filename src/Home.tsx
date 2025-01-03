@@ -58,7 +58,7 @@ function Home() {
                 <hr />
                 <section className='main-nav-section' id='get-involved'>
                     <h2>JOIN US IN OUR WEEKLY MEETINGS!</h2>
-                    <p>We meet every Tuesday from 5-6pm in the Memorial Union lobby!</p>
+                    <p>We meet every Tuesday from 5-6pm in the Lown room of the Memorial Union!</p>
                     <div className='buttons-container'>
                         <div className='social-section'>
                             <img className='social-logo' src={mailingListLogo} alt='Email Logo' />
@@ -79,7 +79,7 @@ function Home() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                OR FOLLOW US ON INSTAGRAM!
+                                FOLLOW US ON INSTAGRAM!
                             </a>
                         </div>
                     </div>

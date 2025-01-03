@@ -49,7 +49,7 @@ function Minutes1982() {
                         </a>
                         , and the{' '}
                         <a
-                            href='https://www.un.org/unispal/wp-content/uploads/2022/10/A.77.356_210922.pdf'
+                            href='https://www.hrw.org/news/2024/07/19/world-court-finds-israel-responsible-apartheid'
                             target='_blank'
                             rel='noreferrer'
                         >
