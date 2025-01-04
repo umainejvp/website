@@ -8,7 +8,7 @@ import Minutes1982 from './Minutes1982.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <BrowserRouter basename='/website'>
+        <BrowserRouter basename='/'>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/demands' element={<Demands />} />
