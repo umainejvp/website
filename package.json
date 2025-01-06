@@ -6,11 +6,12 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
+        "add-domain": "echo umainejvp.org > dist/CNAME",
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
         "predeploy": "bun run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "npm run add-domain && gh-pages -d dist"
     },
     "dependencies": {
         "gh-pages": "^6.2.0",
