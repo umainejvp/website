@@ -101,8 +101,8 @@ function Home() {
                     <h2>CONTACT US</h2>
                     <p>
                         Send us an email at{' '}
-                        <a href='mailto:umaine@jewishvoiceforpeace.org' target='_blank' rel='noreferrer'>
-                            umaine@jewishvoiceforpeace.org
+                        <a href='mailto:umaine@jvp.org' target='_blank' rel='noreferrer'>
+                            umaine@jvp.org
                         </a>
                     </p>
                     <p className='social-section'>
