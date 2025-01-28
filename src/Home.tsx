@@ -58,7 +58,7 @@ function Home() {
                 <hr />
                 <section className='main-nav-section' id='get-involved'>
                     <h2>JOIN US IN OUR WEEKLY MEETINGS!</h2>
-                    <p>We meet every Tuesday from 5-6pm in the Lown room of the Memorial Union!</p>
+                    <p>We meet every Thursday from 5-6pm in the Lown room of the Memorial Union!</p>
                     <div className='buttons-container'>
                         <div className='social-section'>
                             <img className='social-logo' src={mailingListLogo} alt='Email Logo' />
