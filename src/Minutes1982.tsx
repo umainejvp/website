@@ -55,7 +55,7 @@ function Minutes1982() {
                         >
                             International Court of Justice
                         </a>
-                        . In addition, the conditions it is inflicting on the Palestinians in Gaza amount to genocide. It is
+                        . In addition, the conditions Israel is inflicting on the Palestinians in Gaza amounts to genocide. It is
                         therefore the responsibility of our board of trustees to uphold its values and divest from the state
                         of Israel and all corporations complicit in its apartheid regime and genocidal war.
                     </p>
