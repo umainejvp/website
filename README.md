@@ -19,3 +19,7 @@ It is hosted with GitHub pages.
 - Do `bun run deploy`.
 - Wait a few minutes for the site to update...
 - Then you're off to the races!
+
+#### Getting a permission denied error?
+
+If you try and use the `gh-pages` npm package (which `bun run deploy` invokes) to deploy a website from the Windows terminal and have a password-protected SSH key, you will not be prompted to enter your password and the deploy will fail. Using git bash will allow you to enter your password in a pop-up window!
