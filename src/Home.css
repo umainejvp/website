@@ -67,6 +67,19 @@
     gap: 1rem;
 }
 
+#events {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #events-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 60rem;
+    }
+}
+
 #about-image-header {
     display: flex;
     flex-direction: row;

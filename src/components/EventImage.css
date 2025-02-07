@@ -1,0 +1,98 @@
+@media screen and (min-width: 100vh) {
+    .event-image-wrap.selected {
+        figure {
+            display: flex;
+            max-width: unset !important;
+
+            figcaption {
+                width: 25vw;
+            }
+        }
+    }
+}
+
+.event-image {
+    width: 100%;
+    display: block;
+}
+
+.event-image-wrap {
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: background-color 300ms;
+
+    button {
+        all: unset;
+        cursor: pointer;
+        display: block;
+        max-height: 80vh;
+    }
+
+    button:focus-visible {
+        outline: 2px solid black;
+    }
+
+    figure {
+        margin: 0;
+
+        figcaption {
+            text-align: start;
+            display: none;
+            color: white;
+            background-color: rgba(58, 58, 58, 0.75);
+            backdrop-filter: blur(5px);
+            padding: 1rem;
+
+            h3, em, p {
+                margin: 0;
+                display: block;
+            }
+
+            h3 {
+                font-size: 1.75rem;
+                line-height: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            em {
+                font-size: 1.25rem;
+            }
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+.event-image-wrap.selected {
+    z-index: 100000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    button {
+        cursor: default;
+    }
+
+    .event-image {
+        object-fit: contain;
+        max-width: 95vw;
+        max-height: 80vh;
+        z-index: 100001;
+    }
+
+    figure {
+        max-width: min(95vw, 80vh);
+
+        figcaption {
+            display: block;
+        }
+    }
+}

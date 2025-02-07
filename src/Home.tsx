@@ -3,6 +3,11 @@ import Nav from './components/Nav.tsx'
 import jvpLogoSrc from '/JVP-logo.svg'
 import instagramLogo from '/ig_icon.webp'
 import mailingListLogo from '/mailing_list_icon.png'
+import febEvents from '/events/JVP February Events.jpg'
+import tuBShvat from '/events/Tu BShvat.png'
+import spokenTestimonyPractice from '/events/Spoken Testimony Practice.png'
+import rallyForPalestine from '/events/Rally for Palestine.png'
+import EventImage from './components/EventImage.tsx'
 
 function Home() {
     return (
@@ -23,6 +28,37 @@ function Home() {
                         </a>
                     </div>
                 </div>
+                <section className='main-nav-section' id='events'>
+                    <h2>EVENTS</h2>
+                    <div id='events-grid'>
+                        <EventImage
+                            src={febEvents}
+                            name='February Events'
+                            desc={`Alongside our weekly meetings, we've got plenty of exciting events planned for this month!`}
+                        />
+                        <EventImage
+                            src={tuBShvat}
+                            name={`Tu B'Shvat Seder and Discussion`}
+                            time='Thursday February 13th, 6:00pm'
+                            place='Terrell House'
+                        />
+                        <EventImage
+                            src={spokenTestimonyPractice}
+                            name='Spoken Testimony Practice'
+                            time='Thursday February 20th, 5:00pm'
+                            place='Totman Lounge in the Memorial Union'
+                            desc='Come join us and the UMaine College Dems for a live training on making your voice heard through providing public testimony!'
+                        />
+                        <EventImage
+                            src={rallyForPalestine}
+                            name='Rally for Palestine'
+                            time='Friday March 7th, 1:00pm'
+                            place='On the steps of Fogler Library'
+                            desc='Join students, faculty and staff to call on the UMaine Board of Trustees to divest from Apartheid Israel!'
+                        />
+                    </div>
+                </section>
+                <hr />
                 <section className='main-nav-section' id='about'>
                     <div id='about-image-header'>
                         <img src={jvpLogoSrc} alt='Jewish Voice for Peace logo' />
