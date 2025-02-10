@@ -40,8 +40,11 @@ function Nav() {
                     </HashLink>
                 </div>
             )}
+            <HashLink className='nav-item' to='/#events' onClick={() => setExpanded(false)}>
+                events
+            </HashLink>
             <HashLink className='nav-item' to='/#about' onClick={() => setExpanded(false)}>
-                who we are
+                about
             </HashLink>
             <HashLink className='nav-item' to='/#get-involved' onClick={() => setExpanded(false)}>
                 get involved
@@ -61,6 +64,15 @@ function Nav() {
                 precedent
             </HashLink>
             <a
+                className='nav-item'
+                href='https://drive.google.com/drive/folders/1SWLi8IUPuZs8z0OCBCMCIkrilyiRcONI'
+                target='_blank'
+                rel='noreferrer'
+                onClick={() => setExpanded(!expanded)}
+            >
+                materials
+            </a>
+            <a
                 id='register'
                 className='nav-item'
                 href='https://bit.ly/UMSDivest'
@@ -68,7 +80,7 @@ function Nav() {
                 rel='noreferrer'
                 onClick={() => setExpanded(!expanded)}
             >
-                sign the petition
+                petition
             </a>
         </div>
     )

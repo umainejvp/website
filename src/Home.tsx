@@ -19,12 +19,19 @@ function Home() {
                         <h1 className='title'>UMaine Jewish Voice for Peace</h1>
                         <a
                             className='button'
-                            id='splash-button'
                             href='https://bit.ly/UMSDivest'
                             target='_blank'
                             rel='noreferrer'
                         >
                             SIGN FOR THE UMAINE SYSTEM TO DIVEST!
+                        </a>
+                        <a
+                            className='button'
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSftZI_yXCV5ZaaNDYtZNQSOpmtybHPDDMCWdK_9pi3zIJ7Ukg/viewform'
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            JOIN OUR MAILING LIST!
                         </a>
                     </div>
                 </div>
