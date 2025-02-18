@@ -4,7 +4,7 @@ import jvpLogoSrc from '/JVP-logo.svg'
 import instagramLogo from '/ig_icon.webp'
 import mailingListLogo from '/mailing_list_icon.png'
 import febEvents from '/events/JVP February Events.jpg'
-import tuBShvat from '/events/Tu BShvat.png'
+import poetry from '/events/Palestinian Poetry and Prose.png'
 import spokenTestimonyPractice from '/events/Spoken Testimony Practice.png'
 import rallyForPalestine from '/events/Rally for Palestine.png'
 import EventImage from './components/EventImage.tsx'
@@ -17,12 +17,7 @@ function Home() {
                 <div id='splash-image' title='Free Palestine protestors gather outside Fogler Library'>
                     <div className='splash-square'>
                         <h1 className='title'>UMaine Jewish Voice for Peace</h1>
-                        <a
-                            className='button'
-                            href='https://bit.ly/UMSDivest'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        <a className='button' href='https://bit.ly/UMSDivest' target='_blank' rel='noreferrer'>
                             SIGN FOR THE UMAINE SYSTEM TO DIVEST!
                         </a>
                         <a
@@ -44,10 +39,11 @@ function Home() {
                             desc={`Alongside our weekly meetings, we've got plenty of exciting events planned for this month!`}
                         />
                         <EventImage
-                            src={tuBShvat}
-                            name={`Tu B'Shvat Seder and Discussion`}
-                            time='Thursday February 13th, 6:00pm'
-                            place='Terrell House'
+                            src={poetry}
+                            name='Palestinian Poetry and Prose'
+                            time='Saturday February 22nd, 5:00pm'
+                            place='Writing Center in Neville Hall'
+                            desc='Come share Palestinian prose and poetry with students to help process grief, and better understand a Palestinian perspective living in the Apartheid State of Israel!'
                         />
                         <EventImage
                             src={spokenTestimonyPractice}
