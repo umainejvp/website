@@ -28,7 +28,7 @@ function EventImage({ src, name, time, place, desc }: EventImageProps) {
                 <button onClick={(e) => clickOn(e)}>
                     <img className='event-image' src={src} aria-hidden={true} />
                 </button>
-                <figcaption>
+                <figcaption onClick={(e) => e.stopPropagation()}>
                     <h3>{name}</h3>
                     {time && <em>{time}</em>}
                     {place && <em>{place}</em>}
