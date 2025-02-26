@@ -1,7 +1,7 @@
 import './Nav.css'
 import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.png'
 import { HashLink } from 'react-router-hash-link'
 
 function Nav() {
