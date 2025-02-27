@@ -3,8 +3,8 @@ import Nav from './components/Nav.tsx'
 import jvpLogoSrc from '/JVP-logo.svg'
 import instagramLogo from '/ig_icon.webp'
 import mailingListLogo from '/mailing_list_icon.png'
-import febEvents from '/events/JVP February Events.jpg'
-import poetry from '/events/Palestinian Poetry and Prose.png'
+import pinkwashing from '/events/Pinkwashing in Palestine.png'
+import artBuild from '/events/Art Build.png'
 import spokenTestimonyPractice from '/events/Spoken Testimony Practice.png'
 import rallyForPalestine from '/events/Rally for Palestine.png'
 import EventImage from './components/EventImage.tsx'
@@ -34,16 +34,18 @@ function Home() {
                     <h2>EVENTS</h2>
                     <div id='events-grid'>
                         <EventImage
-                            src={febEvents}
-                            name='February Events'
-                            desc={`Alongside our weekly meetings, we've got plenty of exciting events planned for this month!`}
+                            src={pinkwashing}
+                            name='Pinkwashing Palestine'
+                            time='Friday February 28th, 3:00pm'
+                            place='The Multicultural Student Center (rm 312) in the Memorial Union'
+                            desc='Come learn about how "pinkwashing" rhetoric has been used by Apartheid Israel to warp the narrative of Palestinian Liberation!'
                         />
                         <EventImage
-                            src={poetry}
-                            name='Palestinian Poetry and Prose'
-                            time='Saturday February 22nd, 5:00pm'
-                            place='Writing Center in Neville Hall'
-                            desc='Come share Palestinian prose and poetry with students to help process grief, and better understand a Palestinian perspective living in the Apartheid State of Israel!'
+                            src={artBuild}
+                            name='Art Build'
+                            time='Thursday March 6th, 5:00pm'
+                            place='The Lown Room in the Memorial Union'
+                            desc='Join us in creating signs in preparation for the rally being held on Marh 7th on the steps of Fogler Library!'
                         />
                         <EventImage
                             src={spokenTestimonyPractice}
