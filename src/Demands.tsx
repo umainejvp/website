@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Nav from './components/Nav.tsx'
 import { Document, Page } from 'react-pdf'
-import doc from '/Official Divestment Demand for UMaine System.pdf'
+import doc from '/Divestment Demand for UMaine System.pdf'
 import { pdfjs } from 'react-pdf'
 import 'react-pdf/dist/Page/AnnotationLayer.css'
 import 'react-pdf/dist/Page/TextLayer.css'
