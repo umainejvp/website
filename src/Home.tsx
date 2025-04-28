@@ -1,4 +1,6 @@
 import './Home.css'
+import EventImage from './components/EventImage.tsx'
+import march from '/events/UMPD March.png'
 import Nav from './components/Nav.tsx'
 import jvpLogoSrc from '/JVP-logo.svg'
 import instagramLogo from '/ig_icon.webp'
@@ -27,16 +29,16 @@ function Home() {
                 </div>
                 <section className='main-nav-section' id='events'>
                     <h2>EVENTS</h2>
-                    Stay tuned for more event news soon!
-                    {/* <div id='events-grid'>
+                    {/* Stay tuned for more event news soon! */}
+                    <div id='events-grid'>
                         <EventImage
-                            src={pinkwashing}
-                            name='Pinkwashing Palestine'
-                            time='Friday February 28th, 3:00pm'
-                            place='The Multicultural Student Center (rm 312) in the Memorial Union'
-                            desc='Come learn about how "pinkwashing" rhetoric has been used by Apartheid Israel to warp the narrative of Palestinian Liberation!'
+                            src={march}
+                            name='March on UMPD'
+                            time='Friday May 2nd, 1:00pm'
+                            place='MLK Plaza'
+                            desc='UMaine JVP and Students for a Democratic Society (SDS) will gather at MLK plaza outside of the memorial union to march to the police station and demand answers. Together, we will make it clear that students have the right to know how our public services serve the public!'
                         />
-                    </div> */}
+                    </div>
                 </section>
                 <hr />
                 <section className='main-nav-section' id='about'>
