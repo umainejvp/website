@@ -1,6 +1,4 @@
 import './Home.css'
-import EventImage from './components/EventImage.tsx'
-import march from '/events/UMPD March.png'
 import Nav from './components/Nav.tsx'
 import jvpLogoSrc from '/JVP-logo.svg'
 import instagramLogo from '/ig_icon.webp'
@@ -29,15 +27,15 @@ function Home() {
                 </div>
                 <section className='main-nav-section' id='events'>
                     <h2>EVENTS</h2>
-                    {/* Stay tuned for more event news soon! */}
+                    Stay tuned for more event news soon!
                     <div id='events-grid'>
-                        <EventImage
+                        {/* <EventImage
                             src={march}
                             name='March on UMPD'
                             time='Friday May 2nd, 1:00pm'
                             place='MLK Plaza'
                             desc='UMaine JVP and Students for a Democratic Society (SDS) will gather at MLK plaza outside of the memorial union to march to the police station and demand answers. Together, we will make it clear that students have the right to know how our public services serve the public!'
-                        />
+                        /> */}
                     </div>
                 </section>
                 <hr />
@@ -76,7 +74,7 @@ function Home() {
                 <hr />
                 <section className='main-nav-section' id='get-involved'>
                     <h2>JOIN US IN OUR WEEKLY MEETINGS!</h2>
-                    <p>We meet every Thursday from 5-6pm in the Lown room of the Memorial Union!</p>
+                    <p>We meet every Tuesday from 5:30-6:30pm in the Senior Skulls room of the Memorial Union!</p>
                     <div className='buttons-container'>
                         <div className='social-section'>
                             <img className='social-logo' src={mailingListLogo} alt='Email Logo' />
