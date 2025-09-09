@@ -1,6 +1,10 @@
 import './Home.css'
+import EventImage from './components/EventImage.tsx'
 import Nav from './components/Nav.tsx'
 import jvpLogoSrc from '/JVP-logo.svg'
+import divestmentWorkshop from '/events/divestment-workshop.jpeg'
+import rally from '/events/rally.png'
+import shabbos from '/events/shabbos.png'
 import instagramLogo from '/ig_icon.webp'
 import mailingListLogo from '/mailing_list_icon.png'
 
@@ -27,15 +31,28 @@ function Home() {
                 </div>
                 <section className='main-nav-section' id='events'>
                     <h2>EVENTS</h2>
-                    Stay tuned for more event news soon!
+                    {/* Stay tuned for more event news soon! */}
                     <div id='events-grid'>
-                        {/* <EventImage
-                            src={march}
-                            name='March on UMPD'
-                            time='Friday May 2nd, 1:00pm'
-                            place='MLK Plaza'
-                            desc='UMaine JVP and Students for a Democratic Society (SDS) will gather at MLK plaza outside of the memorial union to march to the police station and demand answers. Together, we will make it clear that students have the right to know how our public services serve the public!'
-                        /> */}
+                        <EventImage
+                            src={divestmentWorkshop}
+                            name='Divestment Workshop'
+                            time='Wednesday September 10th, 4:00pm'
+                            place='Bumps Room, Memorial Union'
+                            desc='Write testimony for UMaine to divest from companies complicit in crimes against the Palestinian people!'
+                        />
+                        <EventImage
+                            src={rally}
+                            name='Rally for Palestine!'
+                            time='Friday September 12th, 12:00pm'
+                            place='The steps of Fogler Library'
+                            desc='Join us in this rally! No rest until Palestine is free!'
+                        />
+                        <EventImage
+                            src={shabbos}
+                            name='Anti-Zionist Shabbos'
+                            time='Friday September 12th, 6:00pm'
+                            place='The Wilson Center'
+                        />
                     </div>
                 </section>
                 <hr />
