@@ -27,7 +27,7 @@ function Home() {
                 </div>
                 <section className='main-nav-section' id='events'>
                     <h2>EVENTS</h2>
-                    Stay tuned for more event news soon!
+                    Stay tuned for more event news soon! 
                     {/* <div id='events-grid'>
                         <EventImage
                             src={divestmentWorkshop}
