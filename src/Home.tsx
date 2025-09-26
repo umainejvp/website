@@ -1,10 +1,6 @@
 import './Home.css'
-import EventImage from './components/EventImage.tsx'
 import Nav from './components/Nav.tsx'
 import jvpLogoSrc from '/JVP-logo.svg'
-import divestmentWorkshop from '/events/divestment-workshop.jpeg'
-import rally from '/events/rally.png'
-import shabbos from '/events/shabbos.png'
 import instagramLogo from '/ig_icon.webp'
 import mailingListLogo from '/mailing_list_icon.png'
 
@@ -31,8 +27,8 @@ function Home() {
                 </div>
                 <section className='main-nav-section' id='events'>
                     <h2>EVENTS</h2>
-                    {/* Stay tuned for more event news soon! */}
-                    <div id='events-grid'>
+                    Stay tuned for more event news soon!
+                    {/* <div id='events-grid'>
                         <EventImage
                             src={divestmentWorkshop}
                             name='Divestment Workshop'
@@ -53,7 +49,7 @@ function Home() {
                             time='Friday September 12th, 6:00pm'
                             place='The Wilson Center'
                         />
-                    </div>
+                    </div> */}
                 </section>
                 <hr />
                 <section className='main-nav-section' id='about'>
